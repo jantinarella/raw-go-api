@@ -9,6 +9,6 @@ import (
 func NewRouter() *http.ServeMux {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/health", handler.HealthCheck)
-	mux.HandleFunc("/user", handler.UserHandler)
+	mux.HandleFunc("/users", handler.UserHandler)
 	return mux
 }
